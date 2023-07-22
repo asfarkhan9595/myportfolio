@@ -117,7 +117,7 @@
 /*** Header ***/
 #home {
     margin-bottom: 6rem;
-    background: url(../img/bg-header.png) left top no-repeat;
+    background: url(../img/bg-heade2\.png) left top no-repeat;
 }
 
 .typed-cursor {
@@ -685,6 +685,8 @@
   .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #18d26e;
   }
+  
+
 
 
 
@@ -695,8 +697,6 @@
     .col-lg-5 {
         display: none; /* Hide the left column on small screens */
     }
-
-     
 
     .col-lg-7 {
         width: 95%; /* Make the right column full width on small screens */
@@ -721,10 +721,72 @@
 
 @media (max-width: 768px) {
     .d-flex {
-       /*  flex-direction: column;* Stack items vertically on small screens */
-flex-direction: row;
+        flex-direction: row; /* Stack items vertically on small screens */
     }
 }
     
 
-    
+
+
+
+    /* Add media query for devices with width less than or equal to 320px */
+@media (max-width: 320px) {
+  .col-lg-6 {
+      width: 100%; /* Make the columns full width on small screens */
+  }
+
+  .skill {
+      margin-bottom: 20px; /* Add some spacing between the skills on small screens */
+  }
+
+  .skill h6 {
+      font-size: 1rem; /* Adjust the font size for the skill percentage on small screens */
+  }
+
+  .tab-content {
+      padding: 0; /* Remove padding from the tab content on small screens */
+  }
+
+  .tab-pane {
+      padding: 10px; /* Add some padding to the tab content on small screens */
+  }
+
+  .tab-pane h5 {
+      font-size: 1.2rem; /* Adjust the font size for the tab content headings on small screens */
+  }
+
+  .tab-pane p {
+      font-size: 1rem; /* Adjust the font size for the tab content text on small screens */
+  }
+
+  .tab-pane h6 {
+      font-size: 0.9rem; /* Adjust the font size for the tab content subheadings on small screens */
+  }
+}
+
+
+
+/* CSS for devices with a screen width of 280px or smaller and a screen height of 653px or larger */
+@media (max-width: 280px) and (min-height: 653px) {
+  .rounded {
+      border-radius: 0 !important; /* Remove the border-radius */
+  }
+  ;
+}
+
+@media (max-width: 280px) and (min-height: 653px) {
+  .nav-pills.border-2 {
+      border: none; /* Remove the border */
+  }
+
+  .border-primary {
+    border-color: #ffffff !important;
+
+}
+
+.border-2{
+  border-width: 0px !important;
+  
+
+}
+}
