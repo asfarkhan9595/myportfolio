@@ -696,6 +696,10 @@
       /*  display: none;  Hide the left column on small screens */
     }
 
+     .row g-5{
+       flex-direction: row;
+     }
+
     .col-lg-7 {
         width: 95%; /* Make the right column full width on small screens */
     }
