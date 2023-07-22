@@ -693,12 +693,10 @@
    /* Add media query for devices with width less than or equal to 320px */
    @media (max-width: 320px) {
     .col-lg-5 {
-      /*  display: none;  Hide the left column on small screens */
+        display: none; /* Hide the left column on small screens */
     }
 
-     .row g-5{
-       flex-direction: row;
-     }
+     
 
     .col-lg-7 {
         width: 95%; /* Make the right column full width on small screens */
@@ -723,7 +721,8 @@
 
 @media (max-width: 768px) {
     .d-flex {
-        flex-direction: column; /* Stack items vertically on small screens */
+       /*  flex-direction: column;* Stack items vertically on small screens */
+flex-direction: row;
     }
 }
     
