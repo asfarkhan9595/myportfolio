@@ -693,7 +693,7 @@
    /* Add media query for devices with width less than or equal to 320px */
    @media (max-width: 320px) {
     .col-lg-5 {
-        display: none; /* Hide the left column on small screens */
+      /*  display: none;  Hide the left column on small screens */
     }
 
     .col-lg-7 {
