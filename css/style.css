@@ -689,23 +689,39 @@
 
 
 
-    /* Add media query for devices with width less than or equal to 320px */
-    @media (max-width: 320px) {
-        .col-lg-5 {
-            display: none; /* Hide the left column on small screens */
-        }
 
-        .col-lg-7 {
-            width: 95%; /* Make the right column full width on small screens */
-        }
+   /* Add media query for devices with width less than or equal to 320px */
+   @media (max-width: 320px) {
+    .col-lg-5 {
+        display: none; /* Hide the left column on small screens */
+    }
 
-        .col-lg-6.text-lg-end {
-            text-align: center; /* Center-align the button on small screens */
-        }
+    .col-lg-7 {
+        width: 95%; /* Make the right column full width on small screens */
     }
-    @media (max-width: 768px) {
-        .d-flex {
-            flex-direction: column; /* Stack items vertically on small screens */
-        }
+
+    .col-lg-6.text-lg-end {
+        text-align: center; /* Center-align the button on small screens */
     }
+}
+
+/* Add media query for devices with width between 321px and 358px */
+@media (min-width: 321px) and (max-width: 358px) {
+    .col-lg-5,
+    .col-lg-7 {
+        width: 100%; /* Make both columns full width on small screens */
+    }
+
+    .col-lg-6.text-lg-end {
+        text-align: center; /* Center-align the button on small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+}
+    
+
     
